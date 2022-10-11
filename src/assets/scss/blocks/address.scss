@@ -1,0 +1,34 @@
+.address {
+    position: absolute;
+    display: flex;
+    top: 65%;
+    right: 0;
+
+    &__location,
+    &__mail {
+        display: flex;
+        align-items: center;
+        svg {
+            margin-right: 5px;
+        }
+    }
+
+    &__location {
+        svg {
+            width: 3rem;
+            path {
+                fill: $primary;        
+            }
+        }
+    }
+
+    &__mail {
+        margin-left: 4.3rem;
+        svg {
+            width: 2.9rem;
+            path {
+                fill: $primary;  
+            }
+        }
+    }
+}

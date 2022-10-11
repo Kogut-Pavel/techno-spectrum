@@ -8,11 +8,9 @@ html {
 }
 
 body {
-    background-color: #181818;
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     line-height: 1.5;
-    color: $white;
 }
 
 *,
@@ -30,5 +28,14 @@ a {
     }
 }
 
+.container {
+    max-width: 1530px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
 /* Blocks */
 
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/address";

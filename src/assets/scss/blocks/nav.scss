@@ -1,0 +1,14 @@
+.nav {
+    &__list {
+        display: flex;
+        
+    }
+
+    &__item + &__item {
+        margin-left: 4rem;
+    }
+
+    &__link {
+        text-transform: uppercase;
+    }
+}
