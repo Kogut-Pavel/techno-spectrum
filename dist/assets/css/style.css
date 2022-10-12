@@ -365,7 +365,7 @@ html {
 }
 
 body {
-    font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-family: 'Inter', sans-serif;
     font-size: 1.7rem;
     line-height: 1.5;
 }
@@ -383,6 +383,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+img {
+    width: 100%;
 }
 
 .container {
@@ -468,4 +472,51 @@ a:hover {
 
 .address__mail svg path {
     fill: #8B1414;
+}
+
+.hero__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.hero__left {
+    max-width: 670px;
+}
+
+.hero__title span {
+    color: #8B1414;
+}
+
+.hero__text {
+    margin: 30px 0;
+    font-size: 2.2rem;
+}
+
+.hero__right img {
+    border-radius: 5px;
+}
+
+.title {
+    font-family: 'Inter';
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 124%;
+}
+
+.title--h1 {
+    font-size: 60px;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    padding: 23px 95px;
+    background: #8B1414;
+    border-radius: 5px;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
 }

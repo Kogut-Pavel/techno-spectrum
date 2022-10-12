@@ -297,7 +297,7 @@ button,
 input,
 select,
 textarea {
-  color: #222; }
+  color: #000; }
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -344,12 +344,15 @@ a {
     text-decoration: underline; }
 
 img {
-  width: 100%; }
+  max-width: 100%; }
 
 .container {
   max-width: 1530px;
   margin: 0 auto;
   padding: 0 1.5rem; }
+
+.primary-color {
+  color: #8B1414; }
 
 /* Blocks */
 .header {
@@ -431,3 +434,29 @@ img {
   color: #ffffff;
   border: none;
   text-transform: uppercase; }
+
+.underhero {
+  padding-top: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+  .underhero__item {
+    width: 220px;
+    padding: 3px 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25); }
+    .underhero__item span {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 2.2rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      line-height: 2.7rem; }
+  .underhero__text {
+    margin: 0 auto;
+    max-width: 160px;
+    font-size: 1.4rem; }
