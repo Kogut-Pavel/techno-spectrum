@@ -366,7 +366,7 @@ html {
 
 body {
     font-family: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
-    font-size: 1.4rem;
+    font-size: 1.7rem;
     line-height: 1.5;
 }
 
@@ -392,3 +392,80 @@ a:hover {
 }
 
 /* Blocks */
+.header {
+    padding: 1.2rem 0;
+}
+
+.header__wrapper {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.header__logo {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.header__phones {
+    margin-left: 4.5rem;
+    color: #8B1414;
+    letter-spacing: 0.07em;
+    font-weight: 600;
+}
+
+.nav__list {
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__item + .nav__item {
+    margin-left: 4rem;
+}
+
+.nav__link {
+    text-transform: uppercase;
+}
+
+.address {
+    position: absolute;
+    display: -ms-flexbox;
+    display: flex;
+    top: 65%;
+    right: 0;
+}
+
+.address__location, .address__mail {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.address__location svg, .address__mail svg {
+    margin-right: 5px;
+}
+
+.address__location svg {
+    width: 3rem;
+}
+
+.address__location svg path {
+    fill: #8B1414;
+}
+
+.address__mail {
+    margin-left: 4.3rem;
+}
+
+.address__mail svg {
+    width: 2.9rem;
+}
+
+.address__mail svg path {
+    fill: #8B1414;
+}
