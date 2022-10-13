@@ -1,0 +1,48 @@
+.partners {
+    padding-bottom: 11rem;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__block {
+        max-width: 477px;
+    }
+
+    &__center {
+        position: absolute;
+        bottom: 0;
+        left: 27%;
+        max-width: 542px;
+    }
+
+    &__text {
+        margin: 1.7rem 0;
+        font-size: 2.2rem;
+        line-height: 123%;
+    }
+
+    &__phone {
+        display: flex;
+        align-items: center;
+        a {
+            margin-left: 1.8rem;
+            font-size: 3rem;
+            letter-spacing: 0.055em;
+        }
+        svg {
+            width: 3.5rem;
+            height: 3.5rem;
+            path {
+                fill: $primary;
+            }
+        }
+    }
+    &__img {
+        img {
+            border-radius: 5px;
+        }
+    }
+}

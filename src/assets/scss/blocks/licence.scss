@@ -1,0 +1,24 @@
+.licence {
+    padding-bottom: 11rem;
+    &__wrapper {
+        display: flex;
+        align-items: flex-start;
+        gap: 3.6rem;
+    }
+
+    &__content {
+        width: 380px;
+    }
+
+    &__text {
+        margin-top: 4.5rem;
+        font-size: 2.2rem;
+        line-height: 123%;
+    }
+
+    &__images {
+        display: flex;
+        align-items: center;
+        gap: 1.3rem;
+    }
+}

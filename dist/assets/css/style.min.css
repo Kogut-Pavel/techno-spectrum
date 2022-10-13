@@ -655,3 +655,53 @@ img {
     display: block;
     width: 366px;
     bottom: 0; }
+
+.partners {
+  padding-bottom: 11rem; }
+  .partners__wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between; }
+  .partners__block {
+    max-width: 477px; }
+  .partners__center {
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    max-width: 542px; }
+  .partners__text {
+    margin: 1.7rem 0;
+    font-size: 2.2rem;
+    line-height: 123%; }
+  .partners__phone {
+    display: flex;
+    align-items: center; }
+    .partners__phone a {
+      margin-left: 1.8rem;
+      font-size: 3rem;
+      letter-spacing: 0.055em; }
+    .partners__phone svg {
+      width: 3.5rem;
+      height: 3.5rem; }
+      .partners__phone svg path {
+        fill: #8B1414; }
+  .partners__img img {
+    border-radius: 5px; }
+
+.licence {
+  padding-bottom: 11rem; }
+  .licence__wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 3.6rem; }
+  .licence__content {
+    width: 380px; }
+  .licence__text {
+    margin-top: 4.5rem;
+    font-size: 2.2rem;
+    line-height: 123%; }
+  .licence__images {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem; }
