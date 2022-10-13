@@ -330,7 +330,8 @@ html {
 body {
   font-family: 'Inter', sans-serif;
   font-size: 1.7rem;
-  line-height: 125%; }
+  line-height: 125%;
+  scroll-behavior: smooth; }
 
 *,
 *::before,
@@ -746,6 +747,7 @@ img {
     gap: 1.3rem; }
 
 .footer {
+  position: relative;
   padding: 8.4rem 0 5.2rem 0;
   background-image: url("../images/footer/footer-bg.png");
   background-repeat: no-repeat;
@@ -788,3 +790,8 @@ img {
     justify-content: space-between; }
   .footer__developer {
     text-align: right; }
+  .footer__arrowup {
+    position: absolute;
+    top: 147px;
+    right: 50px;
+    cursor: pointer; }

@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     padding: 8.4rem 0 5.2rem 0;
     background-image: url('../images/footer/footer-bg.png');
     background-repeat: no-repeat;
@@ -56,4 +57,13 @@
     &__developer {
         text-align: right;
     }
+    
+    &__arrowup {
+        position: absolute;
+        top: 147px;
+        right: 50px;
+        cursor: pointer;
+        
+    }
+
 }

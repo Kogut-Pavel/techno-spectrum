@@ -439,6 +439,30 @@ img {
     text-transform: uppercase;
 }
 
+.nav--footer {
+    color: #ffffff;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav--footer .nav__list {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2.6rem;
+}
+
+.nav--footer .nav__item {
+    margin: 0;
+}
+
+.nav--footer .nav__item a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 123%;
+    letter-spacing: 0.07em;
+}
+
 .address {
     position: absolute;
     display: -ms-flexbox;
@@ -476,6 +500,46 @@ img {
 
 .address__mail svg path {
     fill: #8B1414;
+}
+
+.address--footer {
+    position: unset;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 123%;
+    letter-spacing: 0.07em;
+}
+
+.address--footer .address__location {
+    margin: 1.8rem 0 0 0;
+}
+
+.address--footer .address__location svg {
+    width: 3rem;
+    margin-right: 1.8rem;
+}
+
+.address--footer .address__location svg path {
+    fill: #ffffff;
+}
+
+.address--footer .address__mail {
+    margin: 1.8rem 0 0 0;
+}
+
+.address--footer .address__mail svg {
+    width: 2.9rem;
+    margin-right: 1.8rem;
+}
+
+.address--footer .address__mail svg path {
+    fill: #ffffff;
 }
 
 .hero {
@@ -866,4 +930,173 @@ img {
     display: block;
     width: 366px;
     bottom: 0;
+}
+
+.partners {
+    padding-bottom: 11rem;
+}
+
+.partners__wrapper {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.partners__block {
+    max-width: 477px;
+}
+
+.partners__center {
+    position: absolute;
+    bottom: 0;
+    left: 27%;
+    max-width: 542px;
+}
+
+.partners__text {
+    margin: 1.7rem 0;
+    font-size: 2.2rem;
+    line-height: 123%;
+}
+
+.partners__phone {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.partners__phone a {
+    margin-left: 1.8rem;
+    font-size: 3rem;
+    letter-spacing: 0.055em;
+}
+
+.partners__phone svg {
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.partners__phone svg path {
+    fill: #8B1414;
+}
+
+.partners__img img {
+    border-radius: 5px;
+}
+
+.licence {
+    padding-bottom: 11rem;
+}
+
+.licence__wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 3.6rem;
+}
+
+.licence__content {
+    width: 380px;
+}
+
+.licence__text {
+    margin-top: 4.5rem;
+    font-size: 2.2rem;
+    line-height: 123%;
+}
+
+.licence__images {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.footer {
+    position: relative;
+    padding: 8.4rem 0 5.2rem 0;
+    background-image: url("../images/footer/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    letter-spacing: 0.07em;
+}
+
+.footer__wrapper {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 5.6rem;
+    margin-right: 175px;
+    margin-bottom: 7.2rem;
+}
+
+.footer__logo {
+    margin-right: 92px;
+}
+
+.footer__contacts {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.footer__phones {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.footer__phones svg {
+    margin-right: 1.8rem;
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+.footer__phones svg path {
+    fill: #ffffff;
+}
+
+.footer__phones a {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 123%;
+    letter-spacing: 0.07em;
+}
+
+.footer__phones a + a {
+    margin-left: 1rem;
+}
+
+.footer__bottom {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.footer__developer {
+    text-align: right;
+}
+
+.footer__arrowup {
+    position: absolute;
+    top: 147px;
+    right: 50px;
+    cursor: pointer;
 }
