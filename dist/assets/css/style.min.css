@@ -379,6 +379,21 @@ img {
 .nav__link {
   text-transform: uppercase; }
 
+.nav--footer {
+  color: #ffffff;
+  display: flex; }
+  .nav--footer .nav__list {
+    flex-direction: column;
+    gap: 2.6rem; }
+  .nav--footer .nav__item {
+    margin: 0; }
+    .nav--footer .nav__item a {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 123%;
+      letter-spacing: 0.07em; }
+
 .address {
   position: absolute;
   display: flex;
@@ -399,6 +414,30 @@ img {
       width: 2.9rem; }
       .address__mail svg path {
         fill: #8B1414; }
+  .address--footer {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 123%;
+    letter-spacing: 0.07em; }
+    .address--footer .address__location {
+      margin: 1.8rem 0 0 0; }
+      .address--footer .address__location svg {
+        width: 3rem;
+        margin-right: 1.8rem; }
+        .address--footer .address__location svg path {
+          fill: #ffffff; }
+    .address--footer .address__mail {
+      margin: 1.8rem 0 0 0; }
+      .address--footer .address__mail svg {
+        width: 2.9rem;
+        margin-right: 1.8rem; }
+        .address--footer .address__mail svg path {
+          fill: #ffffff; }
 
 .hero {
   padding-bottom: 6rem; }
@@ -705,3 +744,47 @@ img {
     display: flex;
     align-items: center;
     gap: 1.3rem; }
+
+.footer {
+  padding: 8.4rem 0 5.2rem 0;
+  background-image: url("../images/footer/footer-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  letter-spacing: 0.07em; }
+  .footer__wrapper {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 5.6rem;
+    margin-right: 175px;
+    margin-bottom: 7.2rem; }
+  .footer__logo {
+    margin-right: 92px; }
+  .footer__contacts {
+    display: flex;
+    flex-direction: column; }
+  .footer__phones {
+    display: flex;
+    align-items: center;
+    color: #ffffff; }
+    .footer__phones svg {
+      margin-right: 1.8rem;
+      width: 3.5rem;
+      height: 3.5rem; }
+      .footer__phones svg path {
+        fill: #ffffff; }
+    .footer__phones a {
+      font-family: 'Montserrat';
+      font-weight: 700;
+      font-size: 2.2rem;
+      line-height: 123%;
+      letter-spacing: 0.07em; }
+    .footer__phones a + a {
+      margin-left: 1rem; }
+  .footer__bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+  .footer__developer {
+    text-align: right; }

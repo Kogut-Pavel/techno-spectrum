@@ -1,0 +1,59 @@
+.footer {
+    padding: 8.4rem 0 5.2rem 0;
+    background-image: url('../images/footer/footer-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    letter-spacing: 0.07em; 
+    &__wrapper {
+        position: relative;
+        display: flex;
+        align-items: flex-start;
+        gap: 5.6rem;
+        margin-right: 175px;
+        margin-bottom: 7.2rem;
+    }
+
+    &__logo {
+        margin-right: 92px;
+    }
+
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__phones {
+        display: flex;
+        align-items: center;
+        color: $white;
+        svg {
+            margin-right: 1.8rem;
+            width: 3.5rem;
+            height: 3.5rem;
+            path {
+                fill: $white;
+            }
+        }
+        a {
+            font-family: 'Montserrat';
+            font-weight: 700;
+            font-size: 2.2rem;
+            line-height: 123%;
+            letter-spacing: 0.07em;    
+        }
+        a + a {
+            margin-left: 1rem;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    &__developer {
+        text-align: right;
+    }
+}

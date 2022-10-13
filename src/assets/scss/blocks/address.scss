@@ -31,4 +31,41 @@
             }
         }
     }
+
+    &--footer {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        color: $white;
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 123%;
+        letter-spacing: 0.07em;
+        .address {
+
+            &__location {
+                margin: 1.8rem 0 0 0;
+                svg {
+                    width: 3rem;
+                    margin-right: 1.8rem;
+                    path {
+                        fill: $white;        
+                    }
+                }
+            }
+        
+            &__mail {
+                margin: 1.8rem 0 0 0;
+                svg {
+                    width: 2.9rem;
+                    margin-right: 1.8rem;
+                    path {
+                        fill: $white;  
+                    }
+                }
+            }
+
+        }
+    }
 }
