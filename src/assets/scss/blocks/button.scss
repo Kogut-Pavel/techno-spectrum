@@ -6,10 +6,55 @@
     color: $white;
     border: none;
     text-transform: uppercase;
+    letter-spacing: 0.07em;
+    cursor: pointer;
 
+    
     // &:hover {
     //     color: #000000;
     //     background: #FFFFFF;
     //     border: 1px solid #000000;
     // }
+      
+    
+}
+ 
+
+.btn-arrow {
+    position: absolute;
+    width: 305px;
+    padding: 23px 0 23px 30px;
+    background: transparent;
+    color: #000;
+    font-weight: 600;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    transition: all 0.2s linear;
+    svg {
+        width: 21px;
+        position: absolute;
+        bottom: 9px;
+        right: 9px;
+        path {
+            fill: $primary;
+        }
+    }
+    &:hover {
+        text-decoration: none;
+        background: $secondary;
+        color: $white;
+        svg {
+            path {
+                fill: $white;
+            }
+        }
+    }
+    &:active {
+        background: $primary;
+    }
+    
+    
+    
 }

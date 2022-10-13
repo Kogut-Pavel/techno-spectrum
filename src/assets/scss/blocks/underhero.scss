@@ -1,9 +1,9 @@
 .underhero {
-    padding-top: 6rem;
+    padding-bottom: 6rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-
+    justify-content: center;
+    gap: 7rem;
     &__item {
         width: 220px;
         // height: 77px;
@@ -14,6 +14,7 @@
         flex-direction: column;
         border-top: 1px solid $line;
         border-bottom: 1px solid $line;
+
         span {
             font-family: 'Montserrat';
             font-weight: 700;
