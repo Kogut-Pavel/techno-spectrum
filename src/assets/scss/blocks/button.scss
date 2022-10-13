@@ -38,6 +38,7 @@
         bottom: 9px;
         right: 9px;
         path {
+            transition: all 0.2s linear;
             fill: $primary;
         }
     }
