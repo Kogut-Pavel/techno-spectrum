@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\n\r\n    const scrollLinks = document.querySelectorAll('li>a');\r\n    \r\n     for (const scrollLink of scrollLinks) {\r\n       scrollLink.addEventListener('click', event => {\r\n         event.preventDefault();\r\n         const id = scrollLink.getAttribute('href');\r\n         document.querySelector(id).scrollIntoView({\r\n           behavior: 'smooth',\r\n           block: 'start',\r\n           });\r\n       });\r\n      }\r\n  \r\n    let arrowUp = document.querySelector('.up');\r\n\r\n    arrowUp.addEventListener('click', () => {\r\n      document.querySelector('body').scrollIntoView({\r\n        behavior: 'smooth',\r\n        block: 'start',\r\n      });\r\n    });\r\n    \n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
+eval("\r\n\r\n    // const scrollLinks = document.querySelectorAll('li>a');\r\n    \r\n    //  for (const scrollLink of scrollLinks) {\r\n    //    scrollLink.addEventListener('click', event => {\r\n    //      event.preventDefault();\r\n    //      const id = scrollLink.getAttribute('href');\r\n    //      document.querySelector(id).scrollIntoView({\r\n    //        behavior: 'smooth',\r\n    //        block: 'start',\r\n    //        });\r\n    //    });\r\n    //   }\r\n  \r\n    let arrowUp = document.querySelector('.up');\r\n\r\n    arrowUp.addEventListener('click', () => {\r\n      document.querySelector('body').scrollIntoView({\r\n        behavior: 'smooth',\r\n        block: 'start',\r\n      });\r\n    });\r\n    \n\n//# sourceURL=webpack:///./src/assets/js/app.js?");
 
 /***/ })
 
