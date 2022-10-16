@@ -1,0 +1,47 @@
+.work {
+    padding-bottom: 6rem;
+    &__list {
+        margin-top: 3.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        row-gap: 3.5rem;
+        counter-reset: item;
+    }
+
+    &__item {
+        position: relative;
+        width: 417px;  
+        padding-left: 67px;
+        
+        &::before {
+            content: counter(item) "  "; 
+            counter-increment: item;
+            position: absolute;
+            top: 11px;
+            left: 16px;
+            font-size: 1.7rem;
+            color: $primary;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4.1rem;
+            height: 4.1rem;
+            border-radius: 50%;
+            border: 1px solid $primary;
+        }
+        img {
+            margin-bottom: 1.8rem;
+        }
+    }
+
+    &__text {
+        margin-top: 1.8rem;
+        letter-spacing: 0.07em;
+    }
+}

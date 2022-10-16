@@ -1,0 +1,44 @@
+.problems {
+    padding-bottom: 6rem;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 8.1rem;
+    }
+
+    &__block {
+        width: 689px;
+    }
+
+    .title--h3 {
+        height: 7.4rem;
+    }
+
+    &__list {
+        margin-top: 3.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        &--primary {
+            color: $primary;
+            .problems__item {
+                position: relative;
+                border-color: $primary;
+                &::after {
+                    content: url('../images/about/arrow-icon.svg');
+                    position: absolute;
+                    right: -53px;
+                    top: 35%;
+                }
+            }
+        }
+
+    }
+
+    &__item {
+        padding: 2.3rem 2.6rem 2.3rem 2.6rem;
+        border: 1px solid #000000;
+        border-radius: 5px;
+    }
+}

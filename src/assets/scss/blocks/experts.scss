@@ -1,5 +1,8 @@
 .experts {
     padding-bottom: 11rem;
+    &--about {
+        padding-bottom: 6rem;
+    }
     &__wrapper {
         margin: 4.5rem 0 2.1rem 0;
         display: flex;

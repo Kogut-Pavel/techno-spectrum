@@ -1,0 +1,36 @@
+.complex {
+    padding-bottom: 6rem;
+    &__wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 730px;
+            height: 1px;
+            background-color: $line;
+        }
+    }
+
+    &__content {
+        max-width: 730px;
+    }
+
+    &__text {
+        margin-top: 3.5rem;
+    }
+
+    &__image {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 3.5rem;
+        img {
+            border-radius: 5px;
+        }
+    }
+}

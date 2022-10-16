@@ -1,0 +1,49 @@
+.workalot {
+    padding-top: 4.5rem;
+    padding-bottom: 1.5rem;
+
+    &__wrapper {
+        position: relative;
+        margin-top: 3.5rem;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 4rem;
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 730px;
+            height: 1px;
+            background-color: $line;
+        }
+    }
+
+    &__img {
+        img {
+            border-radius: 5px;
+        }
+        
+    }
+
+    &__content {
+        max-width: 730px;
+    }
+
+    &__texts {
+        display: flex;
+        align-items: flex-start;
+        gap: 4rem;
+        margin-top: 3.5rem;
+    }
+
+    &__text {
+        
+        line-height: 123%;
+        letter-spacing: 0.07em;
+        &:first-child {
+            max-width: 291px;
+        }
+    }
+}
