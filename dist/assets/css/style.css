@@ -1022,6 +1022,8 @@ img {
 .licence__images {
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -ms-flex-align: center;
     align-items: center;
     gap: 1.3rem;
@@ -1515,4 +1517,96 @@ img {
 .work__text {
     margin-top: 1.8rem;
     letter-spacing: 0.07em;
+}
+
+.contacts {
+    padding: 4.5rem 0 6rem 0;
+}
+
+.contacts .title--h3 {
+    color: #8B1414;
+    margin-bottom: 0.5rem;
+}
+
+.contacts__wrapper {
+    margin-top: 3.5rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.contacts__block {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    gap: 4rem;
+}
+
+.contacts__block::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 730px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+.contacts__content {
+    max-width: 730px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 2.5rem;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    font-size: 3rem;
+    line-height: 124.52%;
+    letter-spacing: 0.055em;
+    text-transform: uppercase;
+}
+
+.contacts__address, .contacts__tel, .contacts__mail {
+    position: relative;
+    padding-left: 5.3rem;
+}
+
+.contacts__address::before, .contacts__tel::before, .contacts__mail::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    width: 35px;
+    height: 35px;
+    background-size: 35px 35px;
+}
+
+.contacts__address::before {
+    background-image: url(../images/icons/location.svg);
+}
+
+.contacts__tel::before {
+    background-image: url(../images/icons/phone-icon.svg);
+}
+
+.contacts__mail::before {
+    background-image: url(../images/icons/mail.svg);
+}
+
+.contacts__map {
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+
+.contacts__map iframe {
+    border-radius: 5px;
+    width: 100%;
+    height: 324px;
 }

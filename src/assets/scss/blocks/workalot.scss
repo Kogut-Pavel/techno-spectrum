@@ -41,9 +41,12 @@
     &__text {
         
         line-height: 123%;
-        letter-spacing: 0.07em;
-        &:first-child {
-            max-width: 291px;
-        }
+        letter-spacing: 0.07em;  
+        max-width: 291px;
+    }
+
+    &__list {
+        list-style-type: disc;
+        padding-left: 2rem;
     }
 }

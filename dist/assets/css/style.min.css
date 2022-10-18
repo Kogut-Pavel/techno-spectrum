@@ -451,8 +451,9 @@ img {
   .hero__title span {
     color: #8B1414; }
   .hero__text {
-    margin: 30px 0;
-    font-size: 2.2rem; }
+    margin: 3rem 0;
+    font-size: 2.2rem;
+    line-height: 131%; }
   .hero__right img {
     border-radius: 5px; }
 
@@ -746,6 +747,7 @@ img {
     line-height: 123%; }
   .licence__images {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     gap: 1.3rem; }
 
@@ -928,9 +930,11 @@ img {
     margin-top: 3.5rem; }
   .workalot__text {
     line-height: 123%;
-    letter-spacing: 0.07em; }
-    .workalot__text:first-child {
-      max-width: 291px; }
+    letter-spacing: 0.07em;
+    max-width: 291px; }
+  .workalot__list {
+    list-style-type: disc;
+    padding-left: 2rem; }
 
 .complex {
   padding-bottom: 6rem; }
@@ -950,7 +954,8 @@ img {
   .complex__content {
     max-width: 730px; }
   .complex__text {
-    margin-top: 3.5rem; }
+    margin-top: 3.5rem;
+    line-height: 129%; }
   .complex__image {
     display: flex;
     align-items: center;
