@@ -886,16 +886,17 @@ img {
     padding-bottom: 11rem;
 }
 
-.our-objects .title--h3 {
-    margin-top: 4.5rem;
-}
-
 .our-objects .title--h4 {
+    font-size: 2.2rem;
     font-weight: 700;
+    letter-spacing: 0.07em;
+    line-height: 123%;
+    color: #8B1414;
 }
 
 .our-objects__wrapper {
-    margin-top: 3rem;
+    position: relative;
+    margin-top: 4.5rem;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
@@ -903,8 +904,22 @@ img {
     gap: 4rem;
 }
 
+.our-objects__slider {
+    max-width: 730px;
+}
+
+.our-objects__slide-name {
+    margin-bottom: 2rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    line-height: 123%;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+}
+
 .our-objects__image img {
     border-radius: 5px;
+    width: 730px;
 }
 
 .our-objects__content {
@@ -915,26 +930,48 @@ img {
 
 .our-objects__text {
     position: relative;
-    margin-top: 3.5rem;
+    margin: 2.5rem 0 4.5rem 0;
     font-size: 2.2rem;
     line-height: 123%;
 }
 
-.our-objects__text::after {
-    content: '';
-    position: absolute;
-    bottom: -3.5rem;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: rgba(0, 0, 0, 0.25);
+.our-objects__btn-arrow {
+    width: 366px;
 }
 
-.our-objects__btn-arrow {
+.our-objects__dots {
     position: absolute;
-    display: block;
-    width: 366px;
     bottom: 0;
+    left: 51%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.our-objects__dots li {
+    border: 1px solid #8B1414;
+    border-radius: 100px;
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.our-objects__dots li button {
+    background: transparent;
+    font-size: 0;
+    width: 2.2rem;
+    height: 2.2rem;
+    border: none;
+}
+
+.slick-slider {
+    position: unset;
+}
+
+.our-objects__dots .slick-active {
+    transition: all 0.2s linear;
+    background-color: #8B1414;
 }
 
 .partners {
@@ -945,56 +982,67 @@ img {
     margin-bottom: 3.5rem;
 }
 
+.partners .title--h3 {
+    color: #8B1414;
+}
+
 .partners__wrapper {
-    position: relative;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    gap: 5rem 4rem;
 }
 
 .partners__block {
-    max-width: 477px;
+    max-width: 730px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-.partners__center {
-    position: absolute;
-    bottom: 0;
-    left: 27%;
-    max-width: 542px;
+.partners__block:nth-child(even) {
+    max-width: 630px;
 }
 
-.partners__text {
-    margin: 1.7rem 0;
+.partners__text, .partners__address, .partners__phone {
     font-size: 2.2rem;
     line-height: 123%;
 }
 
-.partners__phone {
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-align: center;
-    align-items: center;
+.partners__address, .partners__phone {
+    position: relative;
+    padding-left: 5.3rem;
 }
 
-.partners__phone a {
-    margin-left: 1.8rem;
-    font-size: 3rem;
-    letter-spacing: 0.055em;
+.partners__address::before, .partners__phone::before {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
 }
 
-.partners__phone svg {
+.partners__address::before {
+    content: url("../images/icons/location.svg");
+    width: 3.3rem;
+    height: 3.2rem;
+}
+
+.partners__phone::before {
+    content: url("../images/icons/phone-icon.svg");
     width: 3.5rem;
     height: 3.5rem;
 }
 
-.partners__phone svg path {
-    fill: #8B1414;
-}
-
-.partners__img img {
+.partners img {
     border-radius: 5px;
 }
 
@@ -1007,6 +1055,8 @@ img {
     display: flex;
     -ms-flex-align: start;
     align-items: flex-start;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     gap: 3.6rem;
 }
 
@@ -1031,8 +1081,21 @@ img {
     gap: 1rem;
 }
 
+.licence__images a {
+    transition: all 0.2s linear;
+}
+
+.licence__images a:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
 .licence__images img {
     width: 260px;
+}
+
+.lg-backdrop {
+    background-color: #000000d9;
 }
 
 .footer {

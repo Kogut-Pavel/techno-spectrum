@@ -22,6 +22,16 @@
         block: 'start',
       });
     });
+
+
+    // Инициализация и настройка slick slider  в блоке "Наши объекты"
+    $('.slick-slider').slick({
+        autoplay: true,
+        dots: true,
+        pauseOnHover: true,
+        arrows: false,
+        dotsClass: 'our-objects__dots',
+    });
     
     // Инициализация и настройка lightgallery в блоке "Лицензия"
     lightGallery(document.getElementById('lightgallery'), {
@@ -30,5 +40,6 @@
       hideScrollbar: true,
     });
   });
+
 
     
