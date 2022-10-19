@@ -738,6 +738,7 @@ img {
   .licence__wrapper {
     display: flex;
     align-items: flex-start;
+    justify-content: space-between;
     gap: 3.6rem; }
   .licence__content {
     width: 380px; }
@@ -746,10 +747,20 @@ img {
     font-size: 2.2rem;
     line-height: 123%; }
   .licence__images {
+    max-width: 1073px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    gap: 1.3rem; }
+    gap: 1rem; }
+    .licence__images a {
+      transition: all 0.2s linear; }
+      .licence__images a:hover {
+        transform: scale(1.05); }
+    .licence__images img {
+      width: 260px; }
+
+.lg-backdrop {
+  background-color: #000000d9; }
 
 .footer {
   position: relative;

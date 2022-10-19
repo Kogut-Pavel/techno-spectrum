@@ -3,6 +3,7 @@
     &__wrapper {
         display: flex;
         align-items: flex-start;
+        justify-content: space-between;
         gap: 3.6rem;
     }
 
@@ -17,9 +18,25 @@
     }
 
     &__images {
+        max-width: 1073px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        gap: 1.3rem;
+        gap: 1rem;
+        a {
+            transition: all 0.2s linear;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+        img {
+            width: 260px;
+        }
     }
+ 
+}
+
+
+.lg-backdrop {
+    background-color: #000000d9;
 }

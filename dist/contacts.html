@@ -5,8 +5,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.min.css">
     
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/css/lightgallery.min.css">
+    <link rel="stylesheet" href="assets/css/style.min.css">
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -198,11 +199,19 @@
                             <h3 class="title title--h3">Лицензия</h3>
                             <p class="licence__text">Мы подтверждаем законность осуществляемой деятельности и качество выполняемой работы соответствующими документами.</p>
                         </div>
-                        <div class="licence__images">
-                            <img src="assets/images/licence/licence-1.png" alt="Лицензия">
-                            <img src="assets/images/licence/licence-2.png" alt="Лицензия">
-                            <img src="assets/images/licence/licence-3.png" alt="Лицензия">
-                            <img src="assets/images/licence/licence-4.png" alt="Лицензия">
+                        <div class="licence__images" id="lightgallery">
+                            <a href="assets/images/licence/licence-1-big.png">
+                                <img src="assets/images/licence/licence-1.png" alt="Лицензия">
+                            </a>
+                            <a href="assets/images/licence/licence-2-big.png">
+                                <img src="assets/images/licence/licence-2.png" alt="Лицензия">
+                            </a>
+                            <a href="assets/images/licence/licence-3-big.png">
+                                <img src="assets/images/licence/licence-3.png" alt="Лицензия">
+                            </a>
+                            <a href="assets/images/licence/licence-4-big.png">
+                                <img src="assets/images/licence/licence-4.png" alt="Лицензия">
+                            </a>
                         </div>
                     </div>
                 </section>            </div>
@@ -276,6 +285,7 @@
         </footer> 
         
     <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.0/lightgallery.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 </html>
