@@ -1,0 +1,164 @@
+@media (max-width: 1599px) {
+    .container {
+        max-width: 1230px;
+    }
+    .header {
+        &__phones {
+            margin-left: 3.3rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .nav {
+        &__item + &__item {
+            margin-left: 3rem;
+        }
+
+        &__link {
+            font-size: 1.4rem;
+        }
+    }
+
+    .address {
+        top: 55%;
+        font-size: 1.4rem;
+    }
+
+}
+
+@media (max-width: 1210px) {
+    .header {
+        &__logo {
+            img {
+                max-width: 262px;
+            }
+            
+        }
+        &__phones {
+            padding-top: 2.5rem;
+            margin-left: 2.8rem;
+            font-size: 1.4rem;
+        }
+    }
+
+    .nav {
+        padding-top: 2.5rem;
+        &__item + &__item {
+            margin-left: 2.5rem;
+        }
+    }
+
+    .address {
+        top: 55%;
+        font-size: 1.4rem;
+
+        &__mail {
+            margin-left: 1.2rem;
+        }
+    }
+}
+
+@media (max-width: 1060px) {
+
+    .burger-menu {
+        display: flex;
+    }
+    nav {
+        display: none;
+    }
+
+    .header {
+        &__phones {
+            margin-right: 5.6rem;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 2rem 0 0.5rem 2.4rem;
+        &__logo {
+            img {
+                max-width: 195px;
+            }
+        }
+        &__phones {
+            padding-top: 1.5rem;
+            margin-left: 3.3rem;
+        }
+    }
+
+    .burger-menu {
+        top: 11px;
+    }
+
+    .menubox {
+        padding: 6rem 4rem 2rem 2rem;
+        &__item {
+            padding: 2.5rem 4rem;
+        }
+    }
+
+    .nav {
+        &__item + &__item {
+            margin-left: 3rem;
+        }
+    }
+}
+
+@media (max-width: 640px) {
+    .header {
+        &__wrapper {
+            justify-content: space-between;
+        }
+        &__phones {
+            display: flex;
+            flex-direction: column;
+            margin-right: 4.6rem;
+            margin-left: 1rem;
+        }
+    }
+    .burger-menu {
+        top: 21px;
+    }
+
+    .menubox {
+        padding-top: 4rem;
+        padding-right: 0.5rem;
+        padding-left: 1rem;
+        &__link {
+            font-size: 1.6rem;
+        }
+    }
+    .address {
+        display: none;
+        &__mail {
+            margin-left: 0;
+            margin-top: 1rem;
+        }
+    }
+    .address--mobile {
+        display: block;
+        position: absolute;
+        left: 50px;
+        top: 70%;
+    }
+}
+
+@media (max-width: 455px) {
+    .header {
+        &__wrapper {
+            flex-direction: column;
+        }
+
+        &__phones {
+            margin-right: 0;
+            padding-top: 0.5rem;
+            align-self: flex-end;
+        }
+    }
+    .menubox {
+        width: 80%;
+    }
+
+}

@@ -1,8 +1,12 @@
 .address {
     position: absolute;
     display: flex;
-    top: 65%;
+    top: 55%;
     right: 0;
+
+    &--mobile {
+        display: none;
+    }
 
     &__location,
     &__mail {

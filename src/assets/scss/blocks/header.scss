@@ -3,7 +3,7 @@
     &__wrapper {
         position: relative;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
     }
 
@@ -12,6 +12,7 @@
     }
 
     &__phones {
+        padding-top: 4.3rem;
         margin-left: 4.5rem;
         color: $primary;
         letter-spacing: 0.07em;
