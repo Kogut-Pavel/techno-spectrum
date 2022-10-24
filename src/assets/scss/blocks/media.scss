@@ -39,6 +39,16 @@
         }
     }
 
+    .licence {
+        &__wrapper {
+            flex-direction: column;
+
+        }
+        &__images {
+            align-self: flex-end;
+        }
+    }
+
 }
 
 @media (max-width: 1230px) {
@@ -83,8 +93,18 @@
             &:nth-child(even) {
                 max-width: 500px;
             }
+        } 
+    }
+
+    .licence {
+        overflow: hidden;
+        &__wrapper {
+            flex-direction: row;
+
         }
-         
+        &__images {
+            align-self: flex-end;
+        }
     }
     
 }
@@ -126,6 +146,18 @@
                 max-width: 348px;
             }
             
+        }
+    }
+
+    .licence {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__content {
+            width: 80%;
+        }
+        &__images {
+            flex-wrap: nowrap;
         }
     }
 }
@@ -178,6 +210,36 @@
             }
         }
     }
+
+    .licence {
+        padding-bottom: 7rem;
+        &__wrapper {
+            flex-direction: row;
+            gap: 2rem;
+        }
+        &__content {
+            min-width: 372px;
+        }
+
+        &__text {
+            margin-top: 3rem;
+        }
+
+        &__images {
+            max-width: 500px;
+            img {
+                max-width: 221px;
+            }
+            a {
+                
+                &:hover {
+                    transform: none;
+                }
+            }
+        }
+    }
+
+    
 }
 
 @media (max-width: 640px) {
@@ -244,6 +306,21 @@
             font-size: 1.7rem;
         }
     }
+    .licence {
+        &__wrapper {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        &__content {
+            min-width: 100%;
+        }
+        &__text {
+            font-size: 1.7rem;
+        }
+        &__images {
+            max-width: 100%;
+        }
+    }
 }
 
 @media (max-width: 455px) {
@@ -292,6 +369,15 @@
         &__address,
         &__phone {
             font-size: 1.7rem;
+        }
+    }
+    
+    .licence {
+        &__text {
+            margin-top: 2.5rem;
+        }
+        &__images {
+            max-width: 101%;
         }
     }
 }

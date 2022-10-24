@@ -868,7 +868,6 @@ img {
   .licence__images {
     max-width: 1073px;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1rem; }
     .licence__images a {
@@ -1337,7 +1336,11 @@ img {
   .partners__block {
     max-width: 586px; }
   .partners__block:nth-child(even) {
-    max-width: 586px; } }
+    max-width: 586px; }
+  .licence__wrapper {
+    flex-direction: column; }
+  .licence__images {
+    align-self: flex-end; } }
 
 @media (max-width: 1230px) {
   .header__logo img {
@@ -1362,7 +1365,13 @@ img {
   .partners__block {
     max-width: 500px; }
   .partners__block:nth-child(even) {
-    max-width: 500px; } }
+    max-width: 500px; }
+  .licence {
+    overflow: hidden; }
+    .licence__wrapper {
+      flex-direction: row; }
+    .licence__images {
+      align-self: flex-end; } }
 
 @media (max-width: 1060px) {
   .burger-menu {
@@ -1386,7 +1395,13 @@ img {
         height: 1px;
         background-color: rgba(0, 0, 0, 0.25); }
   .partners__block:nth-child(even) {
-    max-width: 348px; } }
+    max-width: 348px; }
+  .licence__wrapper {
+    flex-direction: column; }
+  .licence__content {
+    width: 80%; }
+  .licence__images {
+    flex-wrap: nowrap; } }
 
 @media (max-width: 767px) {
   .header {
@@ -1414,7 +1429,22 @@ img {
       .partners__block--last::after {
         bottom: -3rem; }
     .partners__block:nth-child(even) {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .licence {
+    padding-bottom: 7rem; }
+    .licence__wrapper {
+      flex-direction: row;
+      gap: 2rem; }
+    .licence__content {
+      min-width: 372px; }
+    .licence__text {
+      margin-top: 3rem; }
+    .licence__images {
+      max-width: 500px; }
+      .licence__images img {
+        max-width: 221px; }
+      .licence__images a:hover {
+        transform: none; } }
 
 @media (max-width: 640px) {
   .title--h2 {
@@ -1455,7 +1485,16 @@ img {
   .partners__block:nth-child(even) {
     max-width: 100%; }
   .partners__text, .partners__address, .partners__phone {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .licence__wrapper {
+    flex-direction: column;
+    gap: 1.5rem; }
+  .licence__content {
+    min-width: 100%; }
+  .licence__text {
+    font-size: 1.7rem; }
+  .licence__images {
+    max-width: 100%; } }
 
 @media (max-width: 455px) {
   .container {
@@ -1485,4 +1524,8 @@ img {
     .partners__block:nth-child(even) {
       max-width: 100%; }
     .partners__text, .partners__address, .partners__phone {
-      font-size: 1.7rem; } }
+      font-size: 1.7rem; }
+  .licence__text {
+    margin-top: 2.5rem; }
+  .licence__images {
+    max-width: 101%; } }

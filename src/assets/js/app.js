@@ -16,12 +16,12 @@
   
     let arrowUp = document.querySelector('.up');
 
-    arrowUp.addEventListener('click', () => {
-      document.querySelector('body').scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    });
+    // arrowUp.addEventListener('click', () => {
+    //   document.querySelector('body').scrollIntoView({
+    //     behavior: 'smooth',
+    //     block: 'start',
+    //   });
+    // });
 
 
     // Инициализация и настройка slick slider в блоке "Наши объекты"
@@ -53,13 +53,23 @@
         }],
     });
     
-    // Инициализация и настройка lightgallery в блоке "Лицензия"
+  // Инициализация и настройка lightgallery в блоке "Лицензия"
     lightGallery(document.getElementById('lightgallery'), {
       licenseKey: 'your_license_key',
       speed: 500,
       hideScrollbar: true,
+      
     });
+
+    if (screen.width < 768) {
+      $('.licence__images').slick({
+        arrows: false,
+        slidesToShow: 1,
+        autoplay: true,
+      });
+    }
   });
 
+ 
 
   
