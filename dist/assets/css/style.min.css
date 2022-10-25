@@ -381,6 +381,7 @@ img {
   .nav__link {
     text-transform: uppercase; }
   .nav--footer {
+    padding-top: 0;
     color: #ffffff;
     display: flex; }
     .nav--footer .nav__list {
@@ -554,6 +555,7 @@ img {
     letter-spacing: 0.07em; }
 
 .btn {
+  display: inline-block;
   font-family: 'Inter', sans-serif;
   padding: 23px 95px;
   background: #8B1414;
@@ -1329,6 +1331,8 @@ img {
   .address {
     top: 55%;
     font-size: 1.4rem; }
+  .hero__left {
+    max-width: 540px; }
   .partners__wrapper {
     gap: 3rem 2.8rem; }
     .partners__wrapper::after {
@@ -1380,6 +1384,24 @@ img {
     display: none; }
   .header__phones {
     margin-right: 5.6rem; }
+  .hero h1 {
+    margin-bottom: 3rem; }
+  .hero__wrapper {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 3rem; }
+  .hero__left {
+    max-width: 100%; }
+  .hero__block {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.4rem; }
+  .hero__text {
+    max-width: 350px;
+    font-size: 1.4rem;
+    margin: 0; }
   .partners__wrapper {
     justify-content: space-around; }
   .partners__block {
@@ -1419,6 +1441,18 @@ img {
       padding: 2.5rem 4rem; }
   .nav__item + .nav__item {
     margin-left: 3rem; }
+  .hero {
+    padding-bottom: 5rem; }
+    .hero h1 {
+      font-size: 4rem;
+      margin-bottom: 2rem; }
+    .hero__wrapper {
+      gap: 1.5rem; }
+    .hero__block {
+      gap: 1.5rem; }
+    .hero .btn {
+      padding: 2.5rem 9.2rem;
+      font-size: 1.3rem; }
   .partners {
     padding-bottom: 10rem; }
     .partners__wrapper {
@@ -1477,6 +1511,19 @@ img {
     position: absolute;
     left: 50px;
     top: 75%; }
+  .hero {
+    padding-bottom: 3.5rem; }
+    .hero h1 {
+      font-size: 2.8rem;
+      margin-bottom: 1.5rem; }
+    .hero__wrapper {
+      gap: 1.5rem; }
+    .hero__block {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1.5rem; }
+    .hero .btn {
+      padding: 2.5rem 9.2rem; }
   .partners__wrapper {
     justify-content: space-between; }
   .partners__block {

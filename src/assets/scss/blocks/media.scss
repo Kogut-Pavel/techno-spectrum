@@ -22,6 +22,12 @@
         font-size: 1.4rem;
     }
 
+    .hero {
+        &__left {
+            max-width: 540px;
+        }
+    }
+
     .partners {
         &__wrapper {
             gap: 3rem 2.8rem;
@@ -42,12 +48,26 @@
     .licence {
         &__wrapper {
             flex-direction: column;
-
         }
         &__images {
             align-self: flex-end;
         }
     }
+
+    // .footer {
+    //     &__wrapper {
+    //         flex-wrap: wrap;
+    //     }
+    //     &__logo {
+    //         flex-grow: 1;
+    //     }
+    //     &__contacts {
+            
+    //     }
+    //     &__phones {
+
+    //     }
+    // }
 
 }
 
@@ -122,6 +142,32 @@
         }
     }
 
+    .hero {
+        h1 {
+            margin-bottom: 3rem;
+        }
+        &__wrapper {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 3rem;
+        }
+        &__left {
+            max-width: 100%;
+        }
+        &__block {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2.4rem;
+        }
+        &__text {
+            max-width: 350px;
+            font-size: 1.4rem;
+            margin: 0;
+        }
+    }
+
     .partners {
         &__wrapper {
             justify-content: space-around;
@@ -189,6 +235,25 @@
             margin-left: 3rem;
         }
     }
+
+    .hero {
+        padding-bottom: 5rem;
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+        }
+        &__wrapper {
+            gap: 1.5rem;
+        }
+        &__block {
+            gap: 1.5rem;
+        }
+        .btn {
+            padding: 2.5rem 9.2rem;
+            font-size: 1.3rem;
+        }
+    }
+
 
     .partners {
         padding-bottom: 10rem;
@@ -264,7 +329,6 @@
     .burger-menu {
         top: 21px;
     }
-
     .menubox {
         padding-top: 4rem;
         padding-right: 0.5rem;
@@ -285,6 +349,25 @@
         position: absolute;
         left: 50px;
         top: 75%;
+    }
+
+    .hero {
+        padding-bottom: 3.5rem;
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1.5rem;
+        }
+        &__wrapper {
+            gap: 1.5rem;
+        }
+        &__block {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+        .btn {
+            padding: 2.5rem 9.2rem;
+        }
     }
     .partners {
         &__wrapper {
