@@ -4,6 +4,10 @@
         max-width: 255px;
     }
 
+    .title--h3 {
+        color: $primary;
+    }
+
     &__wrapper {
         margin-top: 3.2rem;
         display: grid;

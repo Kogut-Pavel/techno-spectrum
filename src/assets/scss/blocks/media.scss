@@ -99,6 +99,15 @@
         }
     }
 
+    .underhero {
+        gap: 2.5rem;
+        overflow-x: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+    }
+
     .partners {
         &__wrapper {
             gap: 3rem 2.4rem;
@@ -254,6 +263,11 @@
         }
     }
 
+    .underhero {
+        padding-bottom: 5rem;
+    }
+
+
 
     .partners {
         padding-bottom: 10rem;
@@ -369,6 +383,21 @@
             padding: 2.5rem 9.2rem;
         }
     }
+
+    .underhero {
+        padding-bottom: 3.5rem;
+        &__item {
+            span {
+                font-weight: 700;
+                font-size: 1.7rem;
+            }
+        }
+        &__text {
+            font-size: 1.3rem;
+        }
+        
+    }
+
     .partners {
         &__wrapper {
             justify-content: space-between;
