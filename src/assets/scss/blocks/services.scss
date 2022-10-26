@@ -11,10 +11,17 @@
     &__wrapper {
         margin-top: 3.2rem;
         display: grid;
-        grid-template-areas: "left-top left-top right-top"
-                             "under under under";
+        grid-template-areas: 
+        "left-top left-top third"
+        "fourth fifth sixth";
         gap: 8rem 4rem;
     }
+
+    // .middle-block {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    // }
+
 
     .title--h3 {
         margin-bottom: 3.5rem;
@@ -23,12 +30,26 @@
     &__left-top {
         grid-area: left-top;
     }
-    &__right-top {
-        grid-area: right-top;
+    .third-element {
+        grid-area: third;
     }
-    &__under {
-        grid-area: under;
-        gap: 40px;
+    // &__under {
+    //     grid-area: under;
+    //     gap: 40px;
+    // }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        grid-area: block;
+    }
+    .fourth-element {
+        grid-area: fourth;
+    }
+    .fifth-element {
+        grid-area: fifth;
+    }
+    .sixth-element {
+        grid-area: sixth;
     }
 
     &__left-top-wrapper {
@@ -70,6 +91,10 @@
         min-height: 100px;
         margin-top: 1.5rem;
         letter-spacing: 0.07em;
+    }
+
+    &__item-alternate-text {
+        display: none;
     }
 
     img {

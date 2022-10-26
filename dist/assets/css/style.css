@@ -811,6 +811,10 @@ img {
     max-width: 255px;
 }
 
+.services .title--h3 {
+    color: #8B1414;
+}
+
 .services__wrapper {
     margin-top: 3.2rem;
     display: grid;
@@ -1925,6 +1929,41 @@ img {
         max-width: 540px;
     }
 
+    .services__wrapper {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        gap: 6rem 2.8rem;
+    }
+
+    .services__under > .services__item:not(:nth-of-type(3)) {
+        display: none;
+    }
+
+    .services__left-top-wrapper {
+        gap: 3rem;
+    }
+
+    .services__left-top-wrapper::after {
+        bottom: -3rem;
+    }
+
+    .services__item {
+        max-width: 586px;
+        min-height: 0px;
+    }
+
+    .services__item-text {
+        min-height: 20px;
+    }
+
+    .services img {
+        max-width: 100%;
+    }
+
     .partners__wrapper {
         gap: 3rem 2.8rem;
     }
@@ -1987,6 +2026,31 @@ img {
 
     .underhero::-webkit-scrollbar {
         display: none;
+    }
+
+    .services__wrapper {
+        display: grid;
+        grid-template-areas: "left-top left-top" "right-top under";
+        gap: 6rem 0;
+    }
+
+    .services__right-top {
+        max-width: 100%;
+    }
+
+    .services__under {
+        gap: 0;
+        max-width: 586px;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    }
+
+    .services__under .services__item {
+        max-width: 90%;
+    }
+
+    .services img {
+        height: 150px;
     }
 
     .partners__wrapper {
@@ -2068,6 +2132,27 @@ img {
         margin: 0;
     }
 
+    .services .title--h3 {
+        margin-bottom: 1.5rem;
+    }
+
+    .services .title--h4 {
+        font-size: 1.4rem;
+    }
+
+    .services__right-top {
+        max-width: 100%;
+    }
+
+    .services__under {
+        gap: 0;
+    }
+
+    .services__item-text {
+        font-size: 1.4rem;
+        line-height: 121%;
+    }
+
     .partners__wrapper {
         -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -2107,6 +2192,26 @@ img {
     .licence__images {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        padding-bottom: 7rem;
+    }
+
+    .services__wrapper {
+        display: grid;
+        grid-template-areas: "left-top left-top" "right-top under" "under under";
+        gap: 6rem 3rem;
+    }
+
+    .services__under {
+        display: grid;
+    }
+
+    .services__under > .services__item:not(:nth-of-type(3)) {
+        display: unset;
     }
 }
 
