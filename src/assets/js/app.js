@@ -16,12 +16,12 @@
   
     let arrowUp = document.querySelector('.up');
 
-    // arrowUp.addEventListener('click', () => {
-    //   document.querySelector('body').scrollIntoView({
-    //     behavior: 'smooth',
-    //     block: 'start',
-    //   });
-    // });
+    arrowUp.addEventListener('click', () => {
+      document.querySelector('body').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    });
 
 
     // Инициализация и настройка slick slider в блоке "Наши объекты"
