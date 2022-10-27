@@ -782,40 +782,30 @@
     }
 
     .our-objects {
-        .title--h4 {
-            font-size: 1.3rem;
-        }
         &__wrapper {
             flex-direction: column;
             gap: 2rem;
         }
         &__slider {
-            width: 90%;
-            margin: 0 auto;
+            width: 100%;
             margin-bottom: 4.7rem;
         }
         &__slide-name {
-            font-size: 1.3rem;
             min-height: 45px;
         }
         &__content {
             max-width: unset;
         }
         &__text {
-            font-size: 1.3rem;
             margin: 1.5rem 0 3rem 0;
         }
         &__dots {
             left: 50%;
             transform: translateX(-50%);
-            top: 25%;
-        }
-        &__btn-arrow {
-            width: 271px;
-            font-size: 1.4rem;
-            padding: 1.4rem 0 1.4rem 1.4rem;
-            svg {
-                width: 1.8rem;
+            top: 28%;
+            li {
+                width: 2rem;
+                height: 2rem;
             }
         }
     }
@@ -859,12 +849,16 @@
 
 @media (max-width: 560px) {
     .our-objects {
-        &__slider {
-            width: 271px;
-            
-        }
         &__dots {
-            top: 0%;
+            top: 20%;
+        }
+    }
+}
+
+@media (max-width: 472px) {
+    .our-objects {
+        &__dots {
+            top: 14%;
         }
     }
 }
@@ -914,11 +908,8 @@
     }
 
     .our-objects {
-        &__slider {
-            width: 271px;
-        }
         &__dots {
-            top: -50px;
+            top: 3%;
             left: 0;
             transform: translateX(0);
         }
@@ -955,15 +946,18 @@
     }
 }
 
-@media (max-width: 370px) {
+@media (max-width: 376px) {
     .our-objects {
-        &__slider {
-            width: 271px;
-        }
         &__dots {
-            top: -90px;
-            left: 0;
-            transform: translateX(0);
+            top: -10%;
+        }
+    }
+}
+
+@media (max-width: 346px) {
+    .our-objects {
+        &__dots {
+            top: -15%;
         }
     }
 }

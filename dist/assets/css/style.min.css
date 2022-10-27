@@ -781,7 +781,6 @@ img {
     letter-spacing: 0.07em;
     text-transform: uppercase; }
   .our-objects__image {
-    margin-bottom: auto !important;
     max-width: 730px; }
     .our-objects__image img {
       border-radius: 5px;
@@ -1788,33 +1787,25 @@ img {
     left: 50%;
     transform: translateX(-50%);
     width: 271px; }
-  .our-objects .title--h4 {
-    font-size: 1.3rem; }
   .our-objects__wrapper {
     flex-direction: column;
     gap: 2rem; }
   .our-objects__slider {
-    width: 90%;
-    margin: 0 auto;
+    width: 100%;
     margin-bottom: 4.7rem; }
   .our-objects__slide-name {
-    font-size: 1.3rem;
     min-height: 45px; }
   .our-objects__content {
     max-width: unset; }
   .our-objects__text {
-    font-size: 1.3rem;
     margin: 1.5rem 0 3rem 0; }
   .our-objects__dots {
     left: 50%;
     transform: translateX(-50%);
-    top: 25%; }
-  .our-objects__btn-arrow {
-    width: 271px;
-    font-size: 1.4rem;
-    padding: 1.4rem 0 1.4rem 1.4rem; }
-    .our-objects__btn-arrow svg {
-      width: 1.8rem; }
+    top: 28%; }
+    .our-objects__dots li {
+      width: 2rem;
+      height: 2rem; }
   .partners__wrapper {
     justify-content: space-between; }
   .partners__block {
@@ -1835,10 +1826,12 @@ img {
     max-width: 100%; } }
 
 @media (max-width: 560px) {
-  .our-objects__slider {
-    width: 271px; }
   .our-objects__dots {
-    top: 0%; } }
+    top: 20%; } }
+
+@media (max-width: 472px) {
+  .our-objects__dots {
+    top: 14%; } }
 
 @media (max-width: 455px) {
   .container {
@@ -1865,10 +1858,8 @@ img {
   .about__img {
     max-width: 271px;
     top: 52%; }
-  .our-objects__slider {
-    width: 271px; }
   .our-objects__dots {
-    top: -50px;
+    top: 3%;
     left: 0;
     transform: translateX(0); }
   .partners {
@@ -1887,10 +1878,10 @@ img {
   .licence__images {
     max-width: 101%; } }
 
-@media (max-width: 370px) {
-  .our-objects__slider {
-    width: 271px; }
+@media (max-width: 376px) {
   .our-objects__dots {
-    top: -90px;
-    left: 0;
-    transform: translateX(0); } }
+    top: -10%; } }
+
+@media (max-width: 346px) {
+  .our-objects__dots {
+    top: -15%; } }
