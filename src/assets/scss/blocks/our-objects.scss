@@ -30,9 +30,12 @@
     }
 
     &__image {
+        margin-bottom: auto !important;
+        max-width: 730px;
         img {
             border-radius: 5px;
-            width: 730px;
+            object-fit: cover;
+            height: 100%;
         }
     }
 
@@ -43,7 +46,6 @@
     }
 
     &__text {
-        position: relative;
         margin: 2.5rem 0 4.5rem 0;
         font-size: 2.2rem;
         line-height: 123%;
