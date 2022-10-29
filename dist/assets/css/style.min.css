@@ -716,7 +716,8 @@ img {
     font-size: 2.2rem; }
   .experts__text {
     margin-top: 2.7rem;
-    letter-spacing: 0.07em; }
+    letter-spacing: 0.07em;
+    line-height: 123%; }
 
 .about .title--h3 {
   font-size: 3rem;
@@ -1764,6 +1765,10 @@ img {
       position: absolute;
       top: 38%;
       left: 0; }
+    .experts--about .experts__wrapper {
+      flex-wrap: nowrap; }
+    .experts--about .experts__item-abs {
+      position: static; }
   .about__wrapper {
     height: 560px;
     position: relative;
@@ -1953,6 +1958,8 @@ img {
       display: none; }
   .experts__item {
     min-width: 226px; }
+  .experts__text {
+    margin-top: 1.5rem; }
   .experts__item-abs {
     position: inherit; }
   .about__wrapper {

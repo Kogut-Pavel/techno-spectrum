@@ -687,6 +687,14 @@
             top: 38%;
             left: 0;
         }
+        &--about {
+            .experts__wrapper {
+                flex-wrap: nowrap;
+            }
+            .experts__item-abs {
+                position: static;
+            }
+        }
     }
 
     .about {
@@ -1014,6 +1022,9 @@
         }
         &__item {
             min-width: 226px;
+        }
+        &__text {
+            margin-top: 1.5rem;
         }
         &__item-abs {
             position: inherit;
