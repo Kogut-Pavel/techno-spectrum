@@ -291,6 +291,31 @@
         }
     }
 
+    // Страница "О компании"
+
+    .workalot {
+        padding-top: 2.5rem;
+
+        &__wrapper {
+            margin-top: 3rem;
+            gap: 2.8rem;
+            &::after {
+                width: 586px;
+            }
+        }
+        &__img {
+            min-width: 586px;
+        }
+        &__texts {
+            margin-top: 1.5rem;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        &__text {
+            max-width: 100%;
+        }
+    }
+
 }
 
 @media (max-width: 1230px) {
@@ -568,6 +593,26 @@
             }
         }
     }
+
+    // Страница "О компании"
+
+    .workalot {
+        &__wrapper {
+            
+            gap: 2.4rem;
+            &::after {
+                width: 500px;
+                left: 0;
+            }
+        }
+        &__img {
+            min-width: 500px;
+        }
+        &__texts {
+            margin-top: 1rem;
+            gap: 1rem;
+        }
+    }
 }
 
 @media (max-width: 1060px) {
@@ -634,8 +679,7 @@
             gap: 2.4rem;
         }
         &__item {
-            // min-width: 250px;
-            max-width: 230px;
+            max-width: 224px;
             font-size: 1.4rem;
         }
         &__item-abs {
@@ -752,10 +796,30 @@
             width: 21px;
         }
     }
+
+    // Страница "О компании"
+
+    .workalot {
+        &__wrapper {
+            gap: 2rem;
+            &::after {
+                width: 350px;
+            }
+        }
+        &__img {
+            min-width: 350px;
+        }
+        &__texts {
+            font-size: 1.4rem;
+        }
+    }
 }
 
 
 @media (max-width: 768px) {
+    .container {
+        padding: 0 2.4rem;
+    }
     .hero {
         padding-bottom: 5rem;
         h1 {
@@ -777,6 +841,12 @@
         .btn {
             padding: 2.5rem 9.2rem;
             font-size: 1.7rem;
+        }
+    }
+
+    .experts {
+        &__item {
+            max-width: 220px;
         }
     }
 
@@ -834,6 +904,30 @@
         }
     }
 
+     // Страница "О компании"
+
+     .workalot {
+        padding-top: 2rem;
+        .title--h2 {
+            margin-bottom: 2rem !important;
+        }
+        &__wrapper {
+            margin-top: 2rem;
+            flex-direction: column;
+            gap: 2rem;
+            &::after {
+                width: 100%;
+                bottom: -1.4rem;
+            }
+        }
+        &__img {
+            min-width: 100%;
+            height: auto;
+        }
+        &__texts {
+            margin-top: 1.5rem;
+        }
+    }
 
 }
 
@@ -1359,6 +1453,21 @@
     .our-objects {
         &__dots {
             top: 20%;
+        }
+    }
+
+    // Страница "О компании"
+
+    .workalot {
+        &__wrapper {
+            margin-top: 1.5rem;
+            gap: 1.5rem;
+            &::after {
+                bottom: -1rem;
+            }
+        }
+        &__texts {
+            margin-top: 1.5rem;
         }
     }
 }
