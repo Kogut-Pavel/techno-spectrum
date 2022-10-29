@@ -1,6 +1,6 @@
 .services-page {
     position: relative;
-    padding-top: 4.5rem;
+    padding-top: 2.5rem;
     padding-bottom: 3.5rem;
 
     &__title {
@@ -27,15 +27,16 @@
 
     &__block {
         position: absolute;
-        top: 200px;
+        top: 180px;
         right: 0;
     }
 
     &__img {
+        object-fit: cover;
         border-radius: 5px;
     }
     
-
+    
 }
 
 .systems {
@@ -66,7 +67,6 @@
         margin-bottom: 4.5rem;
         width: 100%;
         justify-content: space-between;
-
         &::after {
             content: none;
         }
@@ -83,7 +83,12 @@
     &__block-3 {
         width: 493px;
     }
-    
+
+    &__block-reverse {
+        h3 {
+            display: none;
+        }
+    }
 
     &__img {
         border-radius: 5px;
@@ -111,11 +116,14 @@
     }
     &__wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 4rem;
     }
     &__block {
         max-width: 440px;
+        h3 {
+            display: none;
+        }
         h4 {
             margin-bottom: 1.5rem;
         }
@@ -143,4 +151,3 @@
     }
 
 }
-

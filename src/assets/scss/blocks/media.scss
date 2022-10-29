@@ -166,7 +166,130 @@
         }
     }
 
+    // Страница "Услуги"
 
+    .services-page {
+        &__headers {
+            justify-content: stretch;
+        }
+        &__title {
+            margin-bottom: 3rem;
+            padding-right: 14rem;
+        }
+        &__block {
+            margin-bottom: 3rem;
+            position: inherit;
+            top: 0;
+            display: flex;
+            height: 232px;
+            gap: 2.8rem;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 586px;
+                height: 1px;
+                background-color: $line;
+            }
+        }
+        &__text {
+            max-width: 586px;
+        }
+        &__img {
+            width: 586px;
+        }
+    }
+    
+    .systems {
+        .dn {
+            display: none;
+        }
+        width: unset;
+        gap: 2.8rem;
+        margin-bottom: 3rem;
+        &::after {
+            display: none;
+        }
+        &__block {
+            width: 100%;
+            h4 {
+                min-height: 3rem;
+            }
+        }
+        &__img {
+            width: 100%;
+            height: 232px;
+        }
+        &--wide {
+            align-items: flex-start;
+            flex-wrap: wrap;
+            .systems__block {
+                width: 586px;
+            }
+            .systems__block-3 {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                .systems__img {
+                    width: 586px;
+                }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0rem;
+                    left: 0;
+                    width: 586px;
+                    height: 1px;
+                    background-color: $line;
+                }
+            }
+            .systems__block-reverse {
+                flex-direction: row-reverse;
+                &::after {
+                    right: 0;
+                    left: unset;
+                }
+                .systems__block-content {
+                    h3 {
+                        display: block;
+                    }
+                }
+            }
+        
+        }
+       
+        &__block-content {
+            width: 586px;
+        }
+    }
+
+    .develop {
+        margin-bottom: 3rem;
+        &::after {
+            display: none;
+        }
+        &__wrapper {
+            gap: 2.8rem;
+        }
+        &__title-img {
+            width: 350px;
+        }
+        &__images-title {
+            max-width: 165px;
+            margin-left: auto;
+        }
+        &__images {
+            gap: 2.8rem;
+        }
+        &__img {
+            height: 220px;
+            &:first-child {
+                width: 442px;
+            }
+        }
+    }
 
 }
 
@@ -302,7 +425,149 @@
             }
         }
     }
+
+    // Страница "Услуги"
+
+    .services-page {
+        .dn {
+            display: none;
+        }
+        max-width: 720px;
+        margin: 0 auto;
+        &__title {
+            margin-bottom: 1.5rem;
+            padding-right: 0;
+        }
+        &__headers {
+            .dn {
+                display: none;
+            }
+        }
+        .title--h4 {
+            font-size: 1.4rem;
+            min-height: 2.5rem;
+        }
+        &__block {
+            margin-bottom: 2.5rem;
+            height: auto;
+            gap: 2.4rem;
+            &::after {
+                width: 348px;
+            }
+        }
+        &__content {
+            min-width: 348px;
+        }
+        &__text {
+            max-width: 348px;
+            font-size: 1.4rem;
+        }
+        &__img {
+            min-width: 348px;
+            height: 211px;
+        }
+    }
     
+    .systems {
+        gap: 2.4rem;
+        margin-bottom: 2.5rem;
+        align-items: flex-start;
+        &__block {
+            min-height: 367px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            h4 {
+                width: 100%;
+            }
+        }
+        &__img {
+            height: 200px;
+            align-self:flex-end;
+        }
+        &--wide {
+            flex-wrap: wrap;
+            .systems__block {
+                width: 348px;
+                min-height: auto;
+            }
+            .systems__block-3 {
+                width: 100%;
+                flex-direction: row;
+                .systems__img {
+                    width: 348px;
+                    align-self: flex-start;
+                }
+                &::after {
+                    width: 348px;
+                }
+            }
+            .systems__block-reverse {
+                flex-direction: row;
+                height: 280px;
+                &::after {
+                    left: 0;
+                    right: unset;
+                }
+                .systems__img {
+                    align-self: flex-end;
+                }
+            }
+        }
+        &__block-content {
+            width: 348px;
+        }
+    }
+
+    .develop {
+        position: relative;
+        &__wrapper {
+            gap: 2.4rem;
+        }
+        &__block {
+            width: 348px;
+            h3 {
+                display: block;
+                padding-bottom: 165px;
+            }
+        }
+        &__title-img {
+            position: relative;
+            width: 100%;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 348px;
+                height: 1px;
+                background-color: $line;
+            }
+        }
+        &__images-title {
+            max-width: 348px;
+            margin-left: 0;
+        }
+        &__images {
+            gap: 2.4rem;
+        }
+        &__img {
+            height: 149px;
+            &:first-child {
+                width: 348px;
+                position: absolute;
+                top: 5rem;
+                left: 0;
+            }
+            &:nth-of-type(2) {
+                position: absolute;
+                top: 165px;
+                right: 0;
+                width: 348px;
+                height: 217px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1060px) {
@@ -613,7 +878,7 @@
 
             gap: 3rem;
         }
-        .title--h3 {
+        .title--h3:not(:first-of-type()) {
             margin-bottom: 0;
         }
         .title--h4 {
@@ -766,7 +1031,121 @@
             }
         }
     }
+
+    // Страница "Услуги"
+
+    .services-page {
+        max-width: 490px;
+        &__headers {
+            .dn {
+                display: block;
+                &:first-child {
+                    padding-bottom: 210px;
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+            }
+        }
+        .title--h4 {
+            margin-bottom: 1.5rem;
+            min-height: auto;
+        }
+        &__block {
+            flex-direction: column;
+            &::after {
+                width: 100%;
+            }
+        }
+        &__content {
+            min-width: 100%;
+        }
+        &__text {
+            max-width: 100%;
+        }
+        &__img {
+            min-width: 100%;
+        }
+    }
     
+    .systems {
+        flex-direction: column;     
+        &__block {
+            min-height: auto;
+        }
+        &__img {
+            height: auto;
+        }
+        &--wide {
+            .systems__block {
+                width: 100%;
+                min-height: auto;
+            }
+            .systems__block-3 {
+                flex-direction: column;
+                .systems__img {
+                    width: 100%;
+                    height: 156px;
+                }
+                &::after {
+                    width: 100%;
+                }
+            }
+            .systems__block-reverse {
+                flex-direction: column;
+                height: auto;
+                &::after {
+                    left: 0;
+                    right: unset;
+                }
+                .systems__img {
+                    height: 156px;
+                }
+            }
+        }
+        &__block-content {
+            width: 100%;
+        }
+    }
+
+    .develop {
+        &__wrapper {
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        &__block {
+            width: 100%;
+            max-width: 100%;
+            h3 {
+                display: none;
+            }
+        }
+        &__title-img {
+            &::after {
+                display: none;
+            }
+        }
+        &__images-title {
+            max-width: 100%;
+        }
+        &__images {
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+        &__img {
+            width: 100%;
+            height: 156px;
+            &:first-child {
+                height: 200px;
+                width: 100%;
+                top: -21rem;
+            }
+            &:nth-of-type(2) {
+                position: static;
+                width: 100%;
+            }
+        }
+    }
 }
 
 @media (max-width: 640px) {
@@ -1106,12 +1485,68 @@
             align-self: flex-end;
         }
     }
+
+    // Страница "Услуги"
+
+    .services-page {
+        .title--h2 {
+            margin-bottom: 2rem !important;
+        }
+        .title--h3 {
+            font-size: 1.7rem;
+        }
+        &__headers {
+            .dn {
+                display: block;
+                &:first-child {
+                    padding-bottom: 140px;
+                }
+            }
+        }
+    }
+
+    .develop {
+
+        &__images {
+            flex-direction: column;
+            margin-bottom: 3rem;
+        }
+        &__img {
+            height: auto;
+            &:first-child {
+                height: auto;
+                top: -15rem;
+            }
+            &:nth-of-type(2) {
+                height: auto;
+            }
+        }
+    }
 }
 
 @media (max-width: 376px) {
     .our-objects {
         &__dots {
             top: -10%;
+        }
+    }
+
+    // Страница "Услуги"
+
+    .services-page {
+            &__headers {
+            .dn {
+                &:first-child {
+                    padding-bottom: 120px;
+                }
+            }
+        }
+    }
+    .develop {
+        &__img {
+            &:first-child {
+                top: -13rem;
+            }
         }
     }
 }
