@@ -1239,6 +1239,9 @@ img {
     border-radius: 5px; }
   .warranty__content {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
     max-width: 670px;
     padding-top: 3.5rem; }
     .warranty__content::after {
@@ -1250,7 +1253,6 @@ img {
       height: 1px;
       background-color: rgba(0, 0, 0, 0.25); }
   .warranty__text {
-    margin-bottom: 2rem;
     font-size: 2.2rem;
     line-height: 123%; }
 
@@ -1556,7 +1558,13 @@ img {
   .problems__block h3 {
     width: 585px; }
   .problems__item {
-    width: 585px; } }
+    width: 585px; }
+  .warranty__wrapper {
+    gap: 2.8rem; }
+  .warranty__content {
+    padding-top: 2.7rem;
+    max-width: 586px;
+    gap: 1.5rem; } }
 
 @media (max-width: 1230px) {
   .header__logo img {
@@ -1759,7 +1767,13 @@ img {
     align-items: center;
     padding: 0.9rem 2.3rem;
     height: 7.2rem;
-    width: 490px; } }
+    width: 490px; }
+  .warranty__wrapper {
+    gap: 2.4rem; }
+  .warranty__content {
+    padding-top: 2.5rem; }
+  .warranty__text {
+    font-size: 1.7rem; } }
 
 @media (max-width: 1060px) {
   .burger-menu {
@@ -1905,7 +1919,15 @@ img {
     margin-bottom: 0.5rem; }
   .problems__item {
     padding: 0.9rem 1.3rem;
-    width: 348px; } }
+    width: 348px; }
+  .warranty__wrapper {
+    margin-top: 3rem; }
+  .warranty__content {
+    gap: 1rem;
+    padding-top: 1.5rem;
+    max-width: 400px; }
+  .warranty__text {
+    font-size: 1.6rem; } }
 
 @media (max-width: 768px) {
   .container {
@@ -1971,7 +1993,16 @@ img {
     .workalot__texts {
       margin-top: 1.5rem; }
   .complex__image img {
-    height: 273px; } }
+    height: 273px; }
+  .warranty__wrapper {
+    flex-direction: column;
+    gap: 3rem; }
+  .warranty__content {
+    gap: 1rem;
+    padding-top: 3rem;
+    max-width: 100%; }
+  .warranty__text {
+    font-size: 2.2rem; } }
 
 @media (max-width: 767px) {
   .header {
@@ -2325,7 +2356,14 @@ img {
       top: 43%; }
   .problems__item {
     width: 100%;
-    line-height: 123%; } }
+    line-height: 123%; }
+  .warranty__wrapper {
+    margin-top: 1.5rem;
+    gap: 1.5rem; }
+  .warranty__content {
+    padding-top: 1.5rem; }
+  .warranty__text {
+    font-size: 1.7rem; } }
 
 @media (max-width: 560px) {
   .our-objects__dots {
@@ -2433,7 +2471,9 @@ img {
       height: auto;
       top: -15rem; }
     .develop__img:nth-of-type(2) {
-      height: auto; } }
+      height: auto; }
+  .warranty__text {
+    font-size: 1.4rem; } }
 
 @media (max-width: 376px) {
   .our-objects__dots {
