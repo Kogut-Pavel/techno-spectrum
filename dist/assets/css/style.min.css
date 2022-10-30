@@ -1570,7 +1570,18 @@ img {
     .work__item img {
       margin-bottom: 1.5rem; }
   .work__text {
-    margin-top: 1.5rem; } }
+    margin-top: 1.5rem; }
+  .contacts {
+    padding: 3rem 0 6rem 0; }
+    .contacts__wrapper {
+      gap: 3.5rem; }
+    .contacts__block {
+      gap: 2.8rem; }
+      .contacts__block::after {
+        max-width: 586px; }
+    .contacts__content {
+      max-width: 586px;
+      font-size: 2.5rem; } }
 
 @media (max-width: 1230px) {
   .header__logo img {
@@ -1781,7 +1792,16 @@ img {
   .warranty__text {
     font-size: 1.7rem; }
   .work__item {
-    width: 343px; } }
+    width: 343px; }
+  .contacts__block {
+    gap: 2.4rem; }
+    .contacts__block::after {
+      max-width: 490px; }
+  .contacts__content {
+    max-width: 490px;
+    font-size: 2rem; }
+  .contacts__map iframe {
+    height: 296px; } }
 
 @media (max-width: 1060px) {
   .burger-menu {
@@ -1939,7 +1959,23 @@ img {
   .work__item {
     max-width: 348px; }
   .work__text {
-    line-height: 123%; } }
+    line-height: 123%; }
+  .contacts__wrapper {
+    margin-top: 6rem;
+    gap: 9rem; }
+  .contacts__block {
+    position: relative; }
+    .contacts__block::after {
+      max-width: 348px; }
+  .contacts .title--h3 {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    font-size: 2.5rem; }
+  .contacts__content {
+    max-width: 348px; }
+  .contacts__map iframe {
+    height: 210px; } }
 
 @media (max-width: 768px) {
   .container {
@@ -2215,7 +2251,20 @@ img {
     font-size: 1.4rem; }
   .work__item {
     max-width: 271px;
-    padding-left: 60px; } }
+    padding-left: 60px; }
+  .contacts__block {
+    gap: 2rem; }
+    .contacts__block::after {
+      max-width: 260px; }
+  .contacts__content {
+    font-size: 1.7rem;
+    max-width: 260px; }
+  .contacts__address, .contacts__tel, .contacts__mail {
+    padding-left: 4rem; }
+    .contacts__address::before, .contacts__tel::before, .contacts__mail::before {
+      width: 25px;
+      height: 25px;
+      background-size: 25px 25px; } }
 
 @media (max-width: 640px) {
   .title--h2 {
@@ -2386,7 +2435,34 @@ img {
     width: 100%;
     max-width: 100%; }
   .work__text {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .contacts__wrapper {
+    margin-top: 0;
+    gap: 4rem; }
+  .contacts__block {
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 100%; }
+    .contacts__block::after {
+      max-width: 100%;
+      bottom: -1.5rem; }
+  .contacts .title--h3 {
+    position: static;
+    font-size: 1.7rem; }
+  .contacts__content {
+    max-width: 100%;
+    gap: 1rem;
+    font-size: 1.4rem; }
+  .contacts__address, .contacts__tel, .contacts__mail {
+    padding-left: 3rem; }
+    .contacts__address::before, .contacts__tel::before, .contacts__mail::before {
+      width: 20px;
+      height: 20px;
+      background-size: 20px 20px; }
+  .contacts__map {
+    width: 100%; }
+    .contacts__map iframe {
+      height: 163px; } }
 
 @media (max-width: 560px) {
   .our-objects__dots {

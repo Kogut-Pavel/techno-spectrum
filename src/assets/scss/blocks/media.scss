@@ -368,6 +368,26 @@
             margin-top: 1.5rem;
         }
     }
+
+    // Страница "Контакты"
+
+    .contacts {
+        padding: 3rem 0 6rem 0;
+
+        &__wrapper {
+            gap: 3.5rem;
+        }
+        &__block {
+            gap: 2.8rem;
+            &::after {
+                max-width: 586px;
+            }
+        }
+        &__content {
+            max-width: 586px;
+            font-size: 2.5rem;
+        }
+    }
 }
 
 @media (max-width: 1230px) {
@@ -719,6 +739,26 @@
             width: 343px;
         }
     }
+
+    // Страница "Контакты"
+
+    .contacts {
+        &__block {
+            gap: 2.4rem;
+            &::after {
+                max-width: 490px;
+            }
+        }
+        &__content {
+            max-width: 490px;
+            font-size: 2rem;
+        }
+        &__map {
+            iframe {
+                height: 296px;
+            }
+        }
+    }
 }
 
 @media (max-width: 1060px) {
@@ -987,6 +1027,35 @@
         }
         &__text {
             line-height: 123%;
+        }
+    }
+
+    // Страница "Контакты"
+
+    .contacts {
+        &__wrapper {
+            margin-top: 6rem;
+            gap: 9rem;
+        }
+        &__block {
+            position: relative;
+            &::after {
+                max-width: 348px;
+            }
+        }
+        .title--h3 {
+            position: absolute;
+            top: -50px;
+            left: 0;
+            font-size: 2.5rem;
+        }
+        &__content {
+            max-width: 348px;
+        }
+        &__map {
+            iframe {
+                height: 210px;
+            }
         }
     }
 }
@@ -1461,6 +1530,31 @@
             padding-left: 60px;
         }
     }
+
+    // Страница "Контакты"
+
+    .contacts {
+        &__block {
+            gap: 2rem;
+            &::after {
+                max-width: 260px;
+            }
+        }
+        &__content {
+            font-size: 1.7rem;
+            max-width: 260px;
+        }
+        &__address,
+        &__tel,
+        &__mail {
+            padding-left: 4rem;
+            &::before {
+                width: 25px;
+                height: 25px;
+                background-size: 25px 25px;
+            }
+        }
+    }
 }
 
 @media (max-width: 640px) {
@@ -1740,6 +1834,49 @@
         }
         &__text {
             font-size: 1.4rem;
+        }
+    }
+
+    // Страница "Контакты"
+
+    .contacts {
+        &__wrapper {
+            margin-top: 0;
+            gap: 4rem;
+        }
+        &__block {
+            flex-direction: column;
+            gap: 1.5rem;
+            max-width: 100%;
+            &::after {
+                max-width: 100%;
+                bottom: -1.5rem;
+            }
+        }
+        .title--h3 {
+            position: static;
+            font-size: 1.7rem;
+        }
+        &__content {
+            max-width: 100%;
+            gap: 1rem;
+            font-size: 1.4rem;
+        }
+        &__address,
+        &__tel,
+        &__mail {
+            padding-left: 3rem;
+            &::before {
+                width: 20px;
+                height: 20px;
+                background-size: 20px 20px;
+            }
+        }
+        &__map {
+            width: 100%;
+            iframe {
+                height: 163px;
+            }
         }
     }
 }
