@@ -38,12 +38,10 @@
             "left-top left-top"
             "third sixth";
         }
-
         .fourth-element,
         .fifth-element {
             display: none;
         }
-
         &__left-top-wrapper {
             gap: 3rem;
             &::after {
@@ -67,7 +65,6 @@
         &__wrapper {
             gap: 2.4rem;
         }
-
         &__text {
             margin-top: 3rem;
         }
@@ -257,9 +254,7 @@
                     }
                 }
             }
-        
         }
-       
         &__block-content {
             width: 586px;
         }
@@ -359,6 +354,18 @@
             padding-top: 2.7rem;
             max-width: 586px;
             gap: 1.5rem;
+        }
+    }
+
+    .work {
+        &__item {
+            width: 376px;
+            img {
+                margin-bottom: 1.5rem;
+            }
+        }
+        &__text {
+            margin-top: 1.5rem;
         }
     }
 }
@@ -707,6 +714,11 @@
         }
     }
 
+    .work {
+        &__item {
+            width: 343px;
+        }
+    }
 }
 
 @media (max-width: 1060px) {
@@ -966,6 +978,15 @@
         }
         &__text {
             font-size: 1.6rem;
+        }
+    }
+
+    .work {
+        &__item {
+            max-width: 348px;
+        }
+        &__text {
+            line-height: 123%;
         }
     }
 }
@@ -1433,6 +1454,13 @@
             font-size: 1.4rem;
         }
     }
+
+    .work {
+        &__item {
+            max-width: 271px;
+            padding-left: 60px;
+        }
+    }
 }
 
 @media (max-width: 640px) {
@@ -1698,6 +1726,20 @@
         }
         &__text {
             font-size: 1.7rem;
+        }
+    }
+
+    .work {
+        &__list {
+            margin-top: 3rem;
+            row-gap: 1.5rem;
+        }
+        &__item {
+            width: 100%;
+            max-width: 100%;
+        }
+        &__text {
+            font-size: 1.4rem;
         }
     }
 }

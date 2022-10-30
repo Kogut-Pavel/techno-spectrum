@@ -1564,7 +1564,13 @@ img {
   .warranty__content {
     padding-top: 2.7rem;
     max-width: 586px;
-    gap: 1.5rem; } }
+    gap: 1.5rem; }
+  .work__item {
+    width: 376px; }
+    .work__item img {
+      margin-bottom: 1.5rem; }
+  .work__text {
+    margin-top: 1.5rem; } }
 
 @media (max-width: 1230px) {
   .header__logo img {
@@ -1773,7 +1779,9 @@ img {
   .warranty__content {
     padding-top: 2.5rem; }
   .warranty__text {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .work__item {
+    width: 343px; } }
 
 @media (max-width: 1060px) {
   .burger-menu {
@@ -1927,7 +1935,11 @@ img {
     padding-top: 1.5rem;
     max-width: 400px; }
   .warranty__text {
-    font-size: 1.6rem; } }
+    font-size: 1.6rem; }
+  .work__item {
+    max-width: 348px; }
+  .work__text {
+    line-height: 123%; } }
 
 @media (max-width: 768px) {
   .container {
@@ -2200,7 +2212,10 @@ img {
     width: 280px; }
   .problems__item {
     width: 280px;
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .work__item {
+    max-width: 271px;
+    padding-left: 60px; } }
 
 @media (max-width: 640px) {
   .title--h2 {
@@ -2363,7 +2378,15 @@ img {
   .warranty__content {
     padding-top: 1.5rem; }
   .warranty__text {
-    font-size: 1.7rem; } }
+    font-size: 1.7rem; }
+  .work__list {
+    margin-top: 3rem;
+    row-gap: 1.5rem; }
+  .work__item {
+    width: 100%;
+    max-width: 100%; }
+  .work__text {
+    font-size: 1.4rem; } }
 
 @media (max-width: 560px) {
   .our-objects__dots {
