@@ -388,6 +388,30 @@
             font-size: 2.5rem;
         }
     }
+
+    // Страница "Наши объекты"
+
+    .objects {
+        .title--h2 {
+            margin-top: 2.5rem;
+        }
+        &__text-first {
+            max-width: 586px;
+        }
+        &__text {
+            margin-right: 0;
+            max-width: 586px;
+        }
+        .objects-slider .slick-list {
+            height: 545px;
+        }
+        .objects-slider .slick-prev {
+            left: 15%;
+        } 
+        .objects-slider .slick-next {
+            right: 15%;
+        }
+    }
 }
 
 @media (max-width: 1230px) {
@@ -1058,6 +1082,46 @@
             }
         }
     }
+
+    // Страница "Наши объекты"
+
+    .objects {
+        .title--h2 {
+            margin-top: 2.5rem;
+        }
+        &__text-first {
+            max-width: 586px;
+        }
+        &__text {
+            margin-right: 0;
+            max-width: 586px;
+        }
+        &__name {
+            font-size: 1.2rem;
+        }
+        .objects-slider .slick-list {
+            height: 530px;
+        }
+        .objects-slider .slick-track {
+            padding-top: 14rem;
+        }
+        .objects-slider .slick-center {
+            transform: scale(1.8);
+            .objects__name {
+                font-size: 0.9rem;
+            }
+        }
+        
+        .objects-slider .slick-arrow {
+            top: 12%;
+        }
+        .objects-slider .slick-prev {
+            left: 10%;
+        } 
+        .objects-slider .slick-next {
+            right: 10%;
+        }
+    }
 }
 
 
@@ -1194,6 +1258,50 @@
         }
         &__text {
             font-size: 2.2rem;
+        }
+    }   
+
+    // Страница "Наши объекты"
+
+    .objects {
+        padding-bottom: 4rem;
+        .title--h2 {
+            margin-top: 2rem;
+        }
+        &__text-first {
+            max-width: 100%;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+        &__text {
+            max-width: 100%;
+            font-size: 2rem;
+            margin-left: 0;
+        }
+        &__name {
+            font-size: 1.2rem;
+        }
+        .objects-slider .slick-track {
+            padding-top: 6rem;
+        }
+        .objects-slider .slick-list {
+            height: 630px;    
+        }
+        .objects-slider .objects__block {
+            opacity: 1 !important;
+            .objects__name {
+                font-size: 1.4rem;
+            }
+        }
+        .objects-slider .slick-arrow {
+            top: 2%;
+        }
+        .objects-slider .slick-prev {
+            left: 80%;
+        } 
+        .objects-slider .slick-next {
+            right: 0%;
         }
     }
 
@@ -1879,6 +1987,15 @@
             }
         }
     }
+
+    // Страница "Наши объекты" 
+
+    .objects {
+        padding-bottom: 4rem;
+        .objects-slider .slick-list {
+            height: 510px;
+        }
+    }
 }
 
 @media (max-width: 560px) {
@@ -1924,12 +2041,52 @@
             }
         }
     }
+
+    // Страница "Наши объекты" 
+
+    .objects {
+        .objects-slider .slick-list {
+            height: 460px;
+        }
+    }
 }
 
 @media (max-width: 472px) {
     .our-objects {
         &__dots {
             top: 14%;
+        }
+    }
+
+    // Страница "Наши объекты"
+
+    .objects {
+        .title--h2 {
+            margin-top: 2rem;
+        }
+        &__text-first {
+            margin-top: 1.5rem;
+            font-size: 1.3rem;
+        }
+        &__text {
+            font-size: 1.5rem;
+        }
+        .objects-slider .slick-track {
+            padding-top: 4rem;
+        }
+        .objects-slider .objects__block {
+            .objects__name {
+                margin-top: 1rem;
+            }
+        }
+        .objects-slider .slick-arrow {
+            top: 0%;
+        }
+        .objects-slider .slick-prev {
+            left: 65%;
+        } 
+        .objects-slider .slick-next {
+            right: 0%;
         }
     }
 }
@@ -2069,7 +2226,6 @@
     }
 
     .develop {
-
         &__images {
             flex-direction: column;
             margin-bottom: 3rem;
@@ -2091,6 +2247,14 @@
     .warranty {
         &__text {
             font-size: 1.4rem;
+        }
+    }
+
+    // Страница "Наши объекты" 
+
+    .objects {
+        .objects-slider .slick-list {
+            height: 365px;
         }
     }
 }
@@ -2118,6 +2282,15 @@
             &:first-child {
                 top: -13rem;
             }
+        }
+    }
+
+    // Страница "Наши объекты" 
+
+    .objects {
+        padding-bottom: 2rem;
+        .objects-slider .slick-list {
+            height: 340px;
         }
     }
 }

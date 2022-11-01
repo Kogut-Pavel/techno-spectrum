@@ -1392,8 +1392,8 @@ img {
 .objects-slider .slick-track {
     display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-align: center !important;
-    align-items: center !important;
+    -ms-flex-align: start !important;
+    align-items: flex-start !important;
     padding-top: 12rem;
 }
 
@@ -1419,7 +1419,7 @@ img {
 
 .objects-slider .slick-arrow {
     position: absolute;
-    top: 7%;
+    top: 10%;
     background-color: transparent;
     border: none;
     z-index: 99;
@@ -2359,6 +2359,48 @@ img {
     .work__text {
         margin-top: 1.5rem;
     }
+
+    .contacts {
+        padding: 3rem 0 6rem 0;
+    }
+
+    .contacts__wrapper {
+        gap: 3.5rem;
+    }
+
+    .contacts__block {
+        gap: 2.8rem;
+    }
+
+    .contacts__block::after {
+        max-width: 586px;
+    }
+
+    .contacts__content {
+        max-width: 586px;
+        font-size: 2.5rem;
+    }
+
+    .objects .title--h2 {
+        margin-top: 2.5rem;
+    }
+
+    .objects__text-first {
+        max-width: 586px;
+    }
+
+    .objects__text {
+        margin-right: 0;
+        max-width: 586px;
+    }
+
+    .objects .objects-slider .slick-prev {
+        left: 15%;
+    }
+
+    .objects .objects-slider .slick-next {
+        right: 15%;
+    }
 }
 
 @media (max-width: 1230px) {
@@ -2746,6 +2788,23 @@ img {
     .work__item {
         width: 343px;
     }
+
+    .contacts__block {
+        gap: 2.4rem;
+    }
+
+    .contacts__block::after {
+        max-width: 490px;
+    }
+
+    .contacts__content {
+        max-width: 490px;
+        font-size: 2rem;
+    }
+
+    .contacts__map iframe {
+        height: 296px;
+    }
 }
 
 @media (max-width: 1060px) {
@@ -3037,6 +3096,55 @@ img {
 
     .work__text {
         line-height: 123%;
+    }
+
+    .contacts__wrapper {
+        margin-top: 6rem;
+        gap: 9rem;
+    }
+
+    .contacts__block {
+        position: relative;
+    }
+
+    .contacts__block::after {
+        max-width: 348px;
+    }
+
+    .contacts .title--h3 {
+        position: absolute;
+        top: -50px;
+        left: 0;
+        font-size: 2.5rem;
+    }
+
+    .contacts__content {
+        max-width: 348px;
+    }
+
+    .contacts__map iframe {
+        height: 210px;
+    }
+
+    .objects .title--h2 {
+        margin-top: 2.5rem;
+    }
+
+    .objects__text-first {
+        max-width: 586px;
+    }
+
+    .objects__text {
+        margin-right: 0;
+        max-width: 586px;
+    }
+
+    .objects .objects-slider .slick-prev {
+        left: 85%;
+    }
+
+    .objects .objects-slider .slick-next {
+        right: 0;
     }
 }
 
@@ -3556,6 +3664,29 @@ img {
         max-width: 271px;
         padding-left: 60px;
     }
+
+    .contacts__block {
+        gap: 2rem;
+    }
+
+    .contacts__block::after {
+        max-width: 260px;
+    }
+
+    .contacts__content {
+        font-size: 1.7rem;
+        max-width: 260px;
+    }
+
+    .contacts__address, .contacts__tel, .contacts__mail {
+        padding-left: 4rem;
+    }
+
+    .contacts__address::before, .contacts__tel::before, .contacts__mail::before {
+        width: 25px;
+        height: 25px;
+        background-size: 25px 25px;
+    }
 }
 
 @media (max-width: 640px) {
@@ -3873,6 +4004,52 @@ img {
 
     .work__text {
         font-size: 1.4rem;
+    }
+
+    .contacts__wrapper {
+        margin-top: 0;
+        gap: 4rem;
+    }
+
+    .contacts__block {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        gap: 1.5rem;
+        max-width: 100%;
+    }
+
+    .contacts__block::after {
+        max-width: 100%;
+        bottom: -1.5rem;
+    }
+
+    .contacts .title--h3 {
+        position: static;
+        font-size: 1.7rem;
+    }
+
+    .contacts__content {
+        max-width: 100%;
+        gap: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .contacts__address, .contacts__tel, .contacts__mail {
+        padding-left: 3rem;
+    }
+
+    .contacts__address::before, .contacts__tel::before, .contacts__mail::before {
+        width: 20px;
+        height: 20px;
+        background-size: 20px 20px;
+    }
+
+    .contacts__map {
+        width: 100%;
+    }
+
+    .contacts__map iframe {
+        height: 163px;
     }
 }
 

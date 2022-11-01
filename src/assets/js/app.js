@@ -46,9 +46,10 @@
       speed: 700,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 769,
           settings: {
-            slidesToShow: 2,
+            slidesToShow: 1,
+            centerMode: false,
           }
         }],
     });
